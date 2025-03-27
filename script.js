@@ -70,7 +70,7 @@ document.getElementById("shareButton").addEventListener("click", function () {
         downloadLink.click();  // Trigger download
 
         // Tweet with a link (user uploads the image manually)
-        let tweetText = encodeURIComponent("Check out my Bitsy creation! #SaharaLabs #Bitsy #SarahaLabsAI #BitsyGenerator @SaharaLabsAI");
+        let tweetText = encodeURIComponent("Check out my Bitsy creation! #SaharaLabs #Bitsy #SarahaLabsAI #BitsyGenerator @InternBitsy @SaharaLabsAI");
         let tweetURL = `https://twitter.com/intent/tweet?text=${tweetText}&url=https://bitsy-generator.vercel.app/`;
 
         window.open(tweetURL, "_blank");  // Open Twitter share
