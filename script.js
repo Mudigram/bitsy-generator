@@ -8,9 +8,9 @@ const feet = ["foot-1.png", "foot-2.png", "foot-3.png", "foot-4.png","foot-5.png
 const handL = ["hand-1L.png", "hand-2L.png", "hand-3L.png", "hand-4L.png", "hand-5L.png", "hand-6L.png", "hand-7L.png", "hand-8L.png"];
 const handR = ["hand-1R.png", "hand-2R.png", "hand-3R.png", "hand-4R.png", "hand-5R.png", "hand-6R.png", "hand-7R.png", "hand-8R.png"];
 const backgrounds = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg", "bg7.jpg"];
-const names = ["Captain Giggles", "Pixel McBitsy", "Sir Fluffington", "The Doodle King", "Professor Scribbles", "Ziggy Zog", "Mister Bloop", "Glitchy McGlow", "Doodletron 3000", "Blinky Bits", "Wobble Wizard"];
 
-let generatedName = ""; // Store the generated name
+
+
 
 // Function to get a random element from an array
 function getRandomElement(array) {
@@ -26,7 +26,7 @@ function generateBitsy() {
     const leftHand = getRandomElement(handL);
     const rightHand = getRandomElement(handR);
     const background = getRandomElement(backgrounds);
-    generatedName = getRandomElement(names); // Assign the generated name
+
 
     // Create an image container with the name included
     bitsyContainer.innerHTML = `
@@ -37,7 +37,7 @@ function generateBitsy() {
             <img src="assets/${leftHand}" class="bitsy-handL" alt="Bitsy Left Hand">
             <img src="assets/${rightHand}" class="bitsy-handR" alt="Bitsy Right Hand">
             <img src="assets/${foot}" class="bitsy-foot" alt="Bitsy Foot">
-            <div id="bitsy-name" class="bitsy-name"> Name: ${generatedName}</div>
+           
         </div>
     `;
 }
@@ -59,7 +59,7 @@ document.getElementById("shareButton").addEventListener("click", function () {
         ctx.font = "20px Arial";
         ctx.fillStyle = "#ED9455"; 
         ctx.textAlign = "center";
-        ctx.fillText("🎲 Name: " + generatedName, canvas.width / 2, canvas.height - 20);
+        
         
         let imageURL = canvas.toDataURL("image/png");
 
