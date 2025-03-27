@@ -71,7 +71,7 @@ document.getElementById("shareButton").addEventListener("click", function () {
 
         // Tweet with a link (user uploads the image manually)
         let tweetText = encodeURIComponent("Check out my Bitsy creation! #SaharaLabs #Bitsy #SarahaLabsAI #BitsyGenerator @SaharaLabsAI");
-        let tweetURL = `https://twitter.com/intent/tweet?text=${tweetText}&url=https://yourwebsite.com`;
+        let tweetURL = `https://twitter.com/intent/tweet?text=${tweetText}&url=https://bitsy-generator.vercel.app/`;
 
         window.open(tweetURL, "_blank");  // Open Twitter share
     });
