@@ -37,7 +37,7 @@ function generateBitsy() {
             <img src="assets/${leftHand}" class="bitsy-handL" alt="Bitsy Left Hand">
             <img src="assets/${rightHand}" class="bitsy-handR" alt="Bitsy Right Hand">
             <img src="assets/${foot}" class="bitsy-foot" alt="Bitsy Foot">
-            <div id="bitsy-name" class="bitsy-name">🎲 Name: ${generatedName}</div>
+            <div id="bitsy-name" class="bitsy-name"> Name: ${generatedName}</div>
         </div>
     `;
 }
